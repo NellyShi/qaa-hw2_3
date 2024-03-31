@@ -14,7 +14,7 @@ public class PostTest {
                 .when()
                 .post("/post")
                 .then()
-                .body("data.name", equalTo("Joh"))
+                .body("data.name", equalTo("John"))
                 .body("data.age", equalTo(30))
                 .body("data.city", equalTo("New York"));
     }
